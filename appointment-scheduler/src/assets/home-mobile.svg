@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <defs>
+    <!-- Gradient chính: xanh dương → xanh lá (theo màu header) -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#003d6b"/>
+      <stop offset="55%"  stop-color="#005282"/>
+      <stop offset="100%" stop-color="#007a30"/>
+    </linearGradient>
+
+    <!-- Gradient cho hình tròn lớn -->
+    <radialGradient id="circleGrad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0077b6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0077b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="circleGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00b140" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00b140" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="circleGrad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#90e0ef" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#90e0ef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Nền chính -->
+  <rect width="390" height="844" fill="url(#bgGrad)"/>
+
+  <!-- Vòng tròn trang trí lớn phía trên phải -->
+  <circle cx="340" cy="120" r="200" fill="url(#circleGrad1)"/>
+
+  <!-- Vòng tròn trang trí phía dưới trái -->
+  <circle cx="60"  cy="680" r="240" fill="url(#circleGrad2)"/>
+
+  <!-- Vòng tròn nhỏ giữa -->
+  <circle cx="195" cy="400" r="160" fill="url(#circleGrad3)"/>
+
+  <!-- Dấu thập y tế lớn - trung tâm -->
+  <g transform="translate(155, 260)" opacity="0.18">
+    <rect x="28" y="0"  width="24" height="80" rx="8" fill="white"/>
+    <rect x="0"  y="28" width="80" height="24" rx="8" fill="white"/>
+  </g>
+
+  <!-- Dấu thập nhỏ góc trên trái -->
+  <g transform="translate(42, 90)" opacity="0.25">
+    <rect x="10" y="0"  width="10" height="30" rx="4" fill="white"/>
+    <rect x="0"  y="10" width="30" height="10" rx="4" fill="white"/>
+  </g>
+
+  <!-- Dấu thập nhỏ góc phải giữa -->
+  <g transform="translate(310, 340)" opacity="0.2">
+    <rect x="8"  y="0"  width="8"  height="24" rx="3" fill="white"/>
+    <rect x="0"  y="8"  width="24" height="8"  rx="3" fill="white"/>
+  </g>
+
+  <!-- Dấu thập rất nhỏ góc dưới phải -->
+  <g transform="translate(335, 560)" opacity="0.18">
+    <rect x="6"  y="0"  width="6"  height="18" rx="3" fill="white"/>
+    <rect x="0"  y="6"  width="18" height="6"  rx="3" fill="white"/>
+  </g>
+
+  <!-- Đường ECG (nhịp tim) nằm ngang giữa màn -->
+  <polyline
+    points="0,420 40,420 55,395 70,445 85,380 100,460 115,420 155,420 170,408 185,432 195,420 390,420"
+    fill="none"
+    stroke="white"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.2"
+  />
+
+  <!-- Hình tròn viền trắng trang trí -->
+  <circle cx="320" cy="200" r="60"  fill="none" stroke="white" stroke-width="1.5" opacity="0.12"/>
+  <circle cx="320" cy="200" r="40"  fill="none" stroke="white" stroke-width="1"   opacity="0.1"/>
+  <circle cx="70"  cy="580" r="80"  fill="none" stroke="white" stroke-width="1.5" opacity="0.1"/>
+  <circle cx="70"  cy="580" r="55"  fill="none" stroke="white" stroke-width="1"   opacity="0.08"/>
+
+  <!-- Chấm tròn trang trí nhỏ rải rác -->
+  <circle cx="50"  cy="200" r="5"  fill="white" opacity="0.2"/>
+  <circle cx="130" cy="170" r="3"  fill="white" opacity="0.15"/>
+  <circle cx="280" cy="100" r="4"  fill="white" opacity="0.18"/>
+  <circle cx="360" cy="300" r="3"  fill="white" opacity="0.15"/>
+  <circle cx="30"  cy="450" r="4"  fill="white" opacity="0.12"/>
+  <circle cx="360" cy="480" r="5"  fill="white" opacity="0.15"/>
+  <circle cx="200" cy="550" r="3"  fill="white" opacity="0.1"/>
+  <circle cx="100" cy="300" r="3.5" fill="white" opacity="0.12"/>
+
+  <!-- Icon trái tim trung tâm (đơn giản, SVG path) -->
+  <g transform="translate(155, 150)" opacity="0.22">
+    <path d="M40,15 C40,6.7 33.3,0 25,0 C19.8,0 15.2,2.7 12.5,6.8 C9.8,2.7 5.2,0 0,0 C-8.3,0 -15,6.7 -15,15 C-15,23.3 -8.3,30 0,30 L12.5,44 L25,30 C33.3,30 40,23.3 40,15 Z"
+          fill="white"/>
+  </g>
+
+  <!-- Lớp overlay tối nhẹ phía dưới để chữ nổi bật -->
+  <defs>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bottomFade)"/>
+</svg>

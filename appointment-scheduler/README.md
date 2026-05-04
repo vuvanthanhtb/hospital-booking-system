@@ -20,7 +20,7 @@
   - [Dayjs](https://day.js.org/) - Xử lý ngày tháng và thời gian.
   - [React Toastify](https://fkhadra.github.io/react-toastify/) - Hiển thị thông báo popup.
 - **Backend API:** 
-  - Kết nối với hệ thống API tại: `http://139.162.33.111:8085/api`
+  - Kết nối với hệ thống API tại: `http://localhost:8080/api`
 - **Công cụ khác:** Formik (tùy chọn), Yup (tùy chọn), Bootstrap Icons.
 
 ## 📁 Cấu trúc thư mục
@@ -55,5 +55,11 @@ npm start
 npm run build
 ```
 
----
-*Phát triển bởi [Tên của bạn/Team]*
+## 👥 Đội ngũ phát triển
+
+1. **Vũ Văn Thanh** - K25DTCN313
+2. **Đỗ Tiến Hà**  - K25DTCN285
+3. **Vũ Ngọc Tú**   - K25DTCN309
+4. **Đỗ Đức Huy**   - K25DTCN291
+5. **Đỗ Hữu Tự**    - K25DTCN311
+
